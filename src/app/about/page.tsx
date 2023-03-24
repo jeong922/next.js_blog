@@ -1,5 +1,10 @@
+import Profile from '@/components/Profile';
 import React from 'react';
 
 export default function AboutPage() {
-  return <div>about</div>;
+  return (
+    <div className='py-4'>
+      <Profile />
+    </div>
+  );
 }
