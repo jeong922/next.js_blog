@@ -8,7 +8,7 @@ export default function Footer() {
         className='flex items-center text-xs text-gray-500'
       >
         <AiFillGithub className='h-5 w-5 mr-2' />
-        jeong922
+        github.com/jeong922/next.js_blog
       </a>
     </footer>
   );
