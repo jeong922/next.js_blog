@@ -9,6 +9,7 @@ export default function HomePage() {
     <section className='py-4'>
       {/* <Banner /> */}
       <Profile />
+      {/* @ts-expect-error Async Server Component */}
       <FeaturedPosts />
       <CarouselPosts />
     </section>

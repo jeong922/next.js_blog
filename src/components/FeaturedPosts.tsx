@@ -1,9 +1,12 @@
-import PostCard from './PostCard';
+import { getFeaturedPosts } from '@/app/service/posts';
+import PostCards from './PostCards';
 
-export default function FeaturedPosts() {
+export default async function FeaturedPosts() {
+  const posts = await getFeaturedPosts();
   return (
-    <div className='p-4 mt-10'>
-      <PostCard title='Featured Posts' />
-    </div>
+    <section className='p-4 mt-10'>
+      <h2 className='text-2xl font-bold'>Featured Posts</h2>
+      <PostCards posts={posts} />
+    </section>
   );
 }
