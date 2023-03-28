@@ -11,6 +11,7 @@ export default function HomePage() {
       <Profile />
       {/* @ts-expect-error Async Server Component */}
       <FeaturedPosts />
+      {/* @ts-expect-error Async Server Component */}
       <CarouselPosts />
     </section>
   );

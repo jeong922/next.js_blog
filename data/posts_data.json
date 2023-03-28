@@ -38,5 +38,21 @@
     "category": "project",
     "path": "project5",
     "featured": false
+  },
+  {
+    "title": "post6",
+    "description": "프로젝트6",
+    "date": "2023-03-11",
+    "category": "project",
+    "path": "project6",
+    "featured": false
+  },
+  {
+    "title": "post7",
+    "description": "프로젝트7",
+    "date": "2023-03-11",
+    "category": "project",
+    "path": "project7",
+    "featured": false
   }
 ]

@@ -8,7 +8,7 @@ type Props = {
 export default function PostCard({ post }: Props) {
   return (
     <Link href={`/posts/${post.path}`} key={post.path}>
-      <div className='p-2 shadow-lg cursor-pointer'>
+      <div className='p-2 duration-300 ease-in-out shadow-lg cursor-pointer hover:scale-105'>
         {/* 여기 div 대신 이미지 들어갈 자리 */}
         <div className='w-full h-32 bg-gray-500'>썸네일 들어가야하는 자리</div>
         <div className='flex flex-col items-center'>
