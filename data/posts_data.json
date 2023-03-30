@@ -48,11 +48,11 @@
     "featured": false
   },
   {
-    "title": "post7",
-    "description": "프로젝트7",
+    "title": "study1",
+    "description": "study1",
     "date": "2023-03-11",
-    "category": "project",
-    "path": "project7",
+    "category": "study",
+    "path": "study1",
     "featured": false
   }
 ]
