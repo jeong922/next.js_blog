@@ -1,18 +1,18 @@
 [
   {
-    "title": "post1",
-    "description": "프로젝트1",
-    "date": "2023-03-07",
+    "title": "넷플릭스 클론",
+    "description": "React를 이용한 넷플릭스 클론",
+    "date": "2023-03-31",
     "category": "project",
-    "path": "project1",
+    "path": "NetflixClone",
     "featured": true
   },
   {
-    "title": "post2",
-    "description": "프로젝트2",
-    "date": "2023-03-08",
+    "title": "Youtube 클론",
+    "description": "React를 이용한 Youtube 클론",
+    "date": "2023-03-31",
     "category": "project",
-    "path": "project2",
+    "path": "YoutubeClone",
     "featured": true
   },
   {
