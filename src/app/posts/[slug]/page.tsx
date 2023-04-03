@@ -1,5 +1,7 @@
-import { getPostData } from '@/app/service/posts';
-import MarkdownViewer from '@/components/MarkdownViewer';
+import AdjacentPost from '@/components/AdjacentPost';
+import PostContent from '@/components/PostContent';
+import { getPostData } from '@/service/posts';
+import Image from 'next/image';
 
 type Props = {
   params: {
@@ -10,11 +12,18 @@ type Props = {
 export default async function PostPage({ params: { slug } }: Props) {
   const post = await getPostData(slug);
   return (
-    <article className='w-full p-3 overflow-hidden'>
-      <section className='flex flex-col'>
-        <h2 className='mb-2 text-4xl font-bold'>{post.title}</h2>
-        <p className='self-end'>{post.date.toString()}</p>
-        <MarkdownViewer content={post.content} />
+    <article className='w-full p-4 mb-4 overflow-hidden bg-gray-100 rounded-md'>
+      <Image
+        className='w-full mb-4 shadow-lg h-1/5 max-h-[300px] object-cover brightness-75'
+        src={`/images/posts/${post.path}.png`}
+        alt={post.title}
+        width={650}
+        height={420}
+      />
+      <PostContent post={post} />
+      <section className='flex shadow-md'>
+        {post.prev && <AdjacentPost post={post.prev} type='prev' />}
+        {post.next && <AdjacentPost post={post.next} type='next' />}
       </section>
     </article>
   );

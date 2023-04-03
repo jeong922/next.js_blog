@@ -1,4 +1,4 @@
-import { getFeaturedPosts } from '@/app/service/posts';
+import { getFeaturedPosts } from '@/service/posts';
 import PostCards from './PostCards';
 
 export default async function FeaturedPosts() {
