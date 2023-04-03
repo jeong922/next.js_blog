@@ -8,7 +8,6 @@ export default function Header() {
       </Link>
       <nav className='flex gap-4 mt-4 text-sm uppercase sm:mt-0'>
         <Link href='/'>Home</Link>
-        <Link href='/about'>About</Link>
         <Link href='/posts'>Posts</Link>
         <Link href='/contact'>Contact</Link>
       </nav>
