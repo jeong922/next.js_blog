@@ -1,8 +1,10 @@
 import FilterablePosts from '@/components/FilterablePosts';
 import { getAllPosts } from '../../service/posts';
+import { Metadata } from 'next';
 
-export const metadata = {
-  title: `Jeong's Blog | Posts`,
+export const metadata: Metadata = {
+  title: 'Posts',
+  description: '블로그 포스트들',
 };
 
 export default async function PostsPage() {

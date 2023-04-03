@@ -1,8 +1,10 @@
 import Profile from '@/components/Profile';
+import { Metadata } from 'next';
 import React from 'react';
 
-export const metadata = {
-  title: `Jeong's Blog | About`,
+export const metadata: Metadata = {
+  title: 'About',
+  description: '블로그 주인 소개',
 };
 
 export default function AboutPage() {

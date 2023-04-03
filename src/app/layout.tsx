@@ -6,7 +6,10 @@ import { Open_Sans } from 'next/font/google';
 const sans = Open_Sans({ subsets: ['latin'] });
 
 export const metadata = {
-  title: `Jeong's Blog`,
+  title: {
+    default: `Jeong's Blog`,
+    template: `Jeong's Blog | %s`,
+  },
   description: `Next.js로 만든 Jeong's Blog`,
 };
 
