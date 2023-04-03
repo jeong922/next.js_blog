@@ -11,7 +11,7 @@ export default function PostCard({ post }: Props) {
     <Link href={`/posts/${post.path}`} key={post.path}>
       <div className='overflow-hidden duration-300 ease-in-out rounded-md shadow-lg cursor-pointer hover:-translate-y-1'>
         <Image
-          className='w-full aspect-video'
+          className='w-full duration-300 ease-linear transform aspect-video hover:scale-105'
           src={`/images/posts/${post.path}.png`}
           alt={post.title}
           width={300}

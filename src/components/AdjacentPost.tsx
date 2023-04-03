@@ -12,10 +12,10 @@ export default function AdjacentPost({ post, type }: Props) {
   return (
     <Link
       href={`/posts/${post.path}`}
-      className='relative w-full bg-black max-h-56'
+      className='relative w-full overflow-hidden bg-black max-h-56 group'
     >
       <Image
-        className='object-cover w-full opacity-40 max-h-56'
+        className='object-cover w-full duration-300 ease-linear transform opacity-40 group-hover:scale-105'
         src={`/images/posts/${post.path}.png`}
         alt={post.title}
         width={150}
