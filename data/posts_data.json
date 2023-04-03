@@ -14,45 +14,5 @@
     "category": "project",
     "path": "YoutubeClone",
     "featured": true
-  },
-  {
-    "title": "post3",
-    "description": "프로젝트3",
-    "date": "2023-03-09",
-    "category": "project",
-    "path": "project3",
-    "featured": true
-  },
-  {
-    "title": "post4",
-    "description": "프로젝트4",
-    "date": "2023-03-10",
-    "category": "project",
-    "path": "project4",
-    "featured": false
-  },
-  {
-    "title": "post5",
-    "description": "프로젝트5",
-    "date": "2023-03-11",
-    "category": "project",
-    "path": "project5",
-    "featured": false
-  },
-  {
-    "title": "post6",
-    "description": "프로젝트6",
-    "date": "2023-03-11",
-    "category": "project",
-    "path": "project6",
-    "featured": false
-  },
-  {
-    "title": "study1",
-    "description": "study1",
-    "date": "2023-03-11",
-    "category": "study",
-    "path": "study1",
-    "featured": false
   }
 ]

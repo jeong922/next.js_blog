@@ -9,9 +9,9 @@ type Props = {
 export default function PostCard({ post }: Props) {
   return (
     <Link href={`/posts/${post.path}`} key={post.path}>
-      <div className='p-2 duration-300 ease-in-out shadow-lg cursor-pointer hover:scale-105'>
+      <div className='p-2 overflow-hidden duration-300 ease-in-out rounded-md shadow-lg cursor-pointer hover:scale-105'>
         <Image
-          className='w-full'
+          className='w-full aspect-video'
           src={`/images/posts/${post.path}.png`}
           alt={post.title}
           width={300}
