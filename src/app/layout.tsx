@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en' className={sans.className}>
-      <body className='flex flex-col w-full mx-auto max-w-screen-2xl'>
+      <body className='flex flex-col w-full mx-auto max-w-screen-2xl scrollbar scrollbar-thumb-gray-300 scrollbar-thumb-rounded-xl scrollbar-w-3 hover:scrollbar-thumb-gray-900'>
         <Header />
         <main className='grow sm:pt-20 pt-28'>{children}</main>
         <Footer />

@@ -9,6 +9,12 @@ type Props = {
   };
 };
 
+export async function generateMetadata({ params }: Props) {
+  return {
+    title: `Jeong's Blog | ${params.slug}`,
+  };
+}
+
 export default async function PostPage({ params: { slug } }: Props) {
   const post = await getPostData(slug);
   return (

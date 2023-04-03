@@ -9,7 +9,7 @@ type Props = {
 export default function PostCard({ post }: Props) {
   return (
     <Link href={`/posts/${post.path}`} key={post.path}>
-      <div className='p-2 overflow-hidden duration-300 ease-in-out rounded-md shadow-lg cursor-pointer hover:scale-105'>
+      <div className='overflow-hidden duration-300 ease-in-out rounded-md shadow-lg cursor-pointer hover:-translate-y-1'>
         <Image
           className='w-full aspect-video'
           src={`/images/posts/${post.path}.png`}
@@ -17,7 +17,7 @@ export default function PostCard({ post }: Props) {
           width={300}
           height={200}
         />
-        <div className='flex flex-col items-center'>
+        <div className='flex flex-col items-center p-2 '>
           <time className='self-end text-sm text-gray-400'>
             {post.date.toString()}
           </time>
