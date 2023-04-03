@@ -2,6 +2,7 @@
 
 import { ChangeEvent, FormEvent, useState } from 'react';
 import StateBanner, { BannerData } from './StateBanner';
+import { sendContactEmail } from '@/service/contact';
 
 type Form = {
   from: string;
@@ -9,12 +10,10 @@ type Form = {
   message: string;
 };
 
+const DEFAULT_DATA = { from: '', subject: '', message: '' };
+
 export default function ContactForm() {
-  const [form, setForm] = useState<Form>({
-    from: '',
-    subject: '',
-    message: '',
-  });
+  const [form, setForm] = useState<Form>(DEFAULT_DATA);
   const [banner, setBanner] = useState<BannerData | null>(null);
   const onChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -23,12 +22,27 @@ export default function ContactForm() {
 
   const onSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log(form);
-    setBanner({ message: 'success', state: 'success' });
-    setTimeout(() => {
-      setBanner(null);
-    }, 3000);
+    sendContactEmail(form)
+      .then(() => {
+        setBanner({
+          message: '메일이 성공적으로 전송 되었습니다.',
+          state: 'success',
+        });
+        setForm(DEFAULT_DATA);
+      })
+      .catch(() => {
+        setBanner({
+          message: '메일 전송에 실패했습니다.',
+          state: 'error',
+        });
+      })
+      .finally(() => {
+        setTimeout(() => {
+          setBanner(null);
+        }, 3000);
+      });
   };
+
   return (
     <section className='w-full max-w-md'>
       {banner && <StateBanner banner={banner} />}
