@@ -22,13 +22,21 @@ export default async function PostPage({ params: { slug } }: Props) {
   const post = await getPostData(slug);
   return (
     <article className='w-full p-4 mb-4 overflow-hidden bg-gray-100 rounded-md'>
-      <Image
-        className='w-full mb-4 shadow-lg h-1/5 max-h-[300px] object-cover brightness-75'
-        src={`/images/posts/${post.path}.png`}
-        alt={post.title}
-        width={650}
-        height={420}
-      />
+      <div className='relative flex items-center justify-center'>
+        <Image
+          className='w-full mb-4 shadow-lg h-1/5 max-h-[300px] object-cover brightness-75'
+          src={`/images/posts/${post.path}.png`}
+          alt={post.title}
+          width={650}
+          height={420}
+        />
+        <div className='absolute flex flex-col items-center justify-center text-white'>
+          <h2 className='text-4xl font-bold'>{post.title}</h2>
+          <p className='font-bold opacity-70 line-clamp-2'>
+            {post.description}
+          </p>
+        </div>
+      </div>
       <PostContent post={post} />
       <section className='flex shadow-md'>
         {post.prev && <AdjacentPost post={post.prev} type='prev' />}

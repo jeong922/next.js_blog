@@ -14,5 +14,13 @@
     "category": "project",
     "path": "YoutubeClone",
     "featured": true
+  },
+  {
+    "title": "Todo 리스트",
+    "description": "React, PostCSS를 이용해 만든 todo list",
+    "date": "2022-11-04",
+    "category": "project",
+    "path": "TodoList",
+    "featured": true
   }
 ]
