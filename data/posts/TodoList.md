@@ -1,5 +1,7 @@
 ## [클릭😊](https://mellow-jelly-b228bf.netlify.app/)
 
+## [Github](https://github.com/jeong922/todo_list)
+
 ## 목적
 
 React, PostCSS 사용법 복습
