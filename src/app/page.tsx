@@ -8,7 +8,7 @@ export default function HomePage() {
   return (
     <section className='py-4'>
       {/* <Banner /> */}
-      <Profile />
+      {/* <Profile /> */}
       {/* @ts-expect-error Async Server Component */}
       <FeaturedPosts />
       {/* <CarouselPosts /> */}

@@ -11,10 +11,12 @@ export default function ContactPage() {
   return (
     <div className='flex flex-col items-center justify-center'>
       <section className='flex flex-col items-center my-8'>
-        <h2 className='mb-3 text-2xl font-semibold'>Contact Me</h2>
+        <h2 className='mb-3 text-2xl font-semibold dark:text-darkModeText'>
+          Contact Me
+        </h2>
         <a
           href='https://github.com/jeong922'
-          className='flex items-center text-gray-600 hover:text-blue-900'
+          className='flex items-center text-gray-600 hover:text-blue-900 dark:hover:text-blue-500 dark:text-gray-400'
         >
           <AiFillGithub className='mr-2 text-2xl' />
           <p>jeong922</p>

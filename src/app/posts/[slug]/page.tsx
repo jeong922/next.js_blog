@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function PostPage({ params: { slug } }: Props) {
   const post = await getPostData(slug);
   return (
-    <article className='w-full p-4 mb-4 overflow-hidden bg-gray-100 rounded-md'>
+    <article className='w-full p-4 mb-4 overflow-hidden bg-gray-100 rounded-md dark:bg-[#161616]'>
       <div className='relative flex items-center justify-center'>
         <Image
           className='w-full mb-4 shadow-lg h-1/5 max-h-[300px] object-cover brightness-75'

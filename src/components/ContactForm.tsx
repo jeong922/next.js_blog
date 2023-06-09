@@ -54,7 +54,7 @@ export default function ContactForm() {
           Your Email
         </label>
         <input
-          className='px-2 py-1 text-black'
+          className='px-2 py-1 text-black bg-gray-100'
           type='email'
           id='from'
           name='from'
@@ -67,7 +67,7 @@ export default function ContactForm() {
           Subject
         </label>
         <input
-          className='px-2 py-1 text-black'
+          className='px-2 py-1 text-black bg-gray-100'
           type='text'
           id='subject'
           name='subject'
@@ -79,7 +79,7 @@ export default function ContactForm() {
           Message
         </label>
         <textarea
-          className='px-2 py-1 text-black'
+          className='px-2 py-1 text-black bg-gray-100'
           rows={10}
           id='message'
           name='message'

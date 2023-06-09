@@ -12,7 +12,7 @@ type Props = {
 export default function MarkdownViewer({ content }: Props) {
   return (
     <ReactMarkdown
-      className='prose max-w-none'
+      className='prose max-w-none dark:text-darkModeText'
       remarkPlugins={[remarkGfm]}
       components={{
         code({ node, inline, className, children, ...props }) {
@@ -39,6 +39,10 @@ export default function MarkdownViewer({ content }: Props) {
             width={500}
             height={350}
           ></Image>
+        ),
+        a: ({ ...props }) => <a {...props} className='text-blue-600' />,
+        h2: ({ ...props }) => (
+          <h2 {...props} className='dark:text-darkModeText' />
         ),
       }}
     >

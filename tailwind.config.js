@@ -1,8 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'class',
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        darkModeText: 'rgb(229, 229, 229)',
+      },
+    },
   },
   plugins: [
     require('@tailwindcss/line-clamp'),
