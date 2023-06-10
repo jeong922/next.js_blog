@@ -1,7 +1,17 @@
 'use client';
 import { createContext, useContext, useEffect, useState } from 'react';
 
-export const DarkModeContext = createContext<any>(null); // 타입 수정 필요
+type ThemeValue = {
+  darkMode: boolean;
+  toggleDarkMode: () => void;
+};
+
+const themeValue = {
+  darkMode: false,
+  toggleDarkMode: () => {},
+};
+
+export const DarkModeContext = createContext<ThemeValue>(themeValue); // 되긴하는데 확신이 없다..
 
 export function DarkModeProvider({ children }: { children: React.ReactNode }) {
   const [darkMode, setDarkMode] = useState(false);
