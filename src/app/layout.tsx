@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang='en' className={`${sans.className}`}>
       <DarkModeProvider>
-        <body className='flex flex-col w-full scrollbar scrollbar-thumb-gray-300 scrollbar-thumb-rounded-xl scrollbar-w-3 hover:scrollbar-thumb-gray-900 dark:bg-[#141414]'>
+        <body className='flex flex-col w-full scrollbar dark:scrollbar-thumb-gray-700 scrollbar-thumb-gray-300 scrollbar-thumb-rounded-xl scrollbar-w-3 hover:scrollbar-thumb-gray-900 dark:bg-[#141414]'>
           <Header />
           <main className='w-full mx-auto grow sm:pt-20 pt-28 max-w-screen-2xl'>
             {children}
