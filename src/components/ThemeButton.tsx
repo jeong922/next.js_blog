@@ -3,6 +3,7 @@ import { BsFillMoonFill, BsFillSunFill } from 'react-icons/bs';
 
 export default function ThemeButton() {
   const { darkMode, toggleDarkMode } = useDarkMode();
+
   return (
     <button
       onClick={toggleDarkMode}

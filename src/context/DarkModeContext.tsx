@@ -11,7 +11,7 @@ const themeValue = {
   toggleDarkMode: () => {},
 };
 
-export const DarkModeContext = createContext<ThemeValue>(themeValue); // 되긴하는데 확신이 없다..
+export const DarkModeContext = createContext<ThemeValue>(themeValue);
 
 export function DarkModeProvider({ children }: { children: React.ReactNode }) {
   const [darkMode, setDarkMode] = useState(false);
